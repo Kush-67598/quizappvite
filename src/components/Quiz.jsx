@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-import data from './data';
-
-const Quiz = () => {
+const Quiz = ({data,title}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [sno, setSno] = useState(1);
-
     const [answer, setAnswer] = useState('')
     const [Result, setResult] = useState(0)
-
     const [userSelection, setUserSelection] = useState('')
     const [submit, setsubmit] = useState('Next')
     const [isAnswered, setIsAnswered] = useState(false)
-
     const [right, setRight] = useState(0)
     const [wrong, setWrong] = useState(0)
     const [quizCompleted, setQuizCompleted] = useState(false)
@@ -65,18 +60,15 @@ const Quiz = () => {
             setQuizCompleted(true)
         }
     };
-
-
-
     return (
         <>
-            <div className="container bg-black h-[100svh] w-[100svw] ">
-    <div className='flex items-center'>
-        <h2 className='font-bold text-lg text-white lg:text-4xl'>"The Ultimate Gaming Challenge: Can You Beat the Quiz?"</h2>
-        <h2 className='text-white mx-2 font-bold'>Score&rarr; {Result}</h2>
+            <div className="container bg-black h-[100svh] w-[100svw]  lg:h-[90vh] lg:w-[100vw]  ">
+    <div className='flex items-center justify-between'>
+        <h2 className='font-bold text-lg text-white lg:text-4xl pt-2 mx-1'>{`The Ultimate ${title} Challenge: Can You Beat the Quiz?`}</h2>
+<span className='text-white font-bold text-xl mr-2'>Questions:{currentIndex+1}/{data.length}</span>   
     </div>
     <hr />
-    <h1 className='text-white font-bold text-center text-3xl mt-8'>QUIZ&rarr;PUBG</h1>
+    <h1 className='text-white font-bold text-center text-3xl mt-8'>QUIZ&rarr;{title}</h1>
     <div className="question py-2 text-center mt-8 mb-12 text-white font-bold text-x">
         {sno}. {data[currentIndex].question}
     </div>
@@ -84,7 +76,7 @@ const Quiz = () => {
         {data[currentIndex].options.map((item) => (
             <button
                 key={item}
-                className='bg-red-600 w-full h-14 text-sm rounded-md font-bold text-white hover:border-2'
+                className='bg-red-600 w-full h-36 text-sm rounded-md font-bold text-white hover:border-2'
                 onClick={() => { getbtnvalue(item); handleAnswered(); }}
                 disabled={isAnswered}
             >
@@ -92,7 +84,7 @@ const Quiz = () => {
             </button>
         ))}
     </div>
-    <div className='flex flex-col items-center justify-center m-4'>
+    <div className='flex flex-col items-center justify-center mt-16'>
         <div className="answer py-2 text-white text-xl font-bold text-center">Your answer is &rarr; {userSelection}</div>
         <div className="answer py-2 text-white text-xl font-bold text-center">Correct Answer is &rarr; {answer}</div>
     </div>
@@ -103,10 +95,12 @@ const Quiz = () => {
         <div className={`bg-slate-600 rounded-lg text-white my-12 font-bold mx-10 ${quizCompleted ? 'block' : 'hidden'}`}>
             <h2 className='text-center font-bold text-2xl m-2 underline'>RESULT</h2>
             <div className='py-2 px-4'>
+                <h2 className='text-white  font-bold'>Your Score is&rarr; {Result}</h2>
                 <h2>Total Question &rarr; {data.length}</h2>
                 <h2>Correct &rarr; {right}</h2>
                 <h2>Incorrect &rarr; {wrong}</h2>
                 <h2>Not Attempted &rarr; {data.length - (right + wrong)}</h2>
+
             </div>
         </div>
     </div>

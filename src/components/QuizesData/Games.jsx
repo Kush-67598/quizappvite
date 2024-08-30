@@ -1,4 +1,4 @@
-const data=[            
+const Games=[            
     {
         "question": "What is the maximum number of players that can be accommodated in a single game of BGMI?",
         "options": ["60", "64", "100", "120"],
@@ -120,82 +120,12 @@ const data=[
         "options": ["Frag Grenade", "Smoke Grenade", "Flashbang", "Molotov Cocktail"],
         "answer": "Flashbang"
     },
-    {
-        "question": "What is the primary purpose of the 'Care Package' in BGMI?",
-        "options": ["Healing", "Loot", "Vehicle Repair", "Resupply"],
-        "answer": "Loot"
-    },
+    
     {
         "question": "Which BGMI character is known for their special abilities and skills in the game?",
         "options": ["Victor", "Sarah", "Lucas", "Roy"],
         "answer": "Victor"
-    },
-    {
-        "question": "In BGMI, what is the maximum number of players in a 'Zombie Mode' match?",
-        "options": ["50", "60", "80", "100"],
-        "answer": "60"
-    },
-    {
-        "question": "Which BGMI map was inspired by a real-world desert location?",
-        "options": ["Erangel", "Miramar", "Sanhok", "Vikendi"],
-        "answer": "Miramar"
-    },
-    {
-        "question": "In BGMI, what is the total number of different weapon attachments available?",
-        "options": ["15", "20", "25", "30"],
-        "answer": "25"
-    },
-    {
-        "question": "Which vehicle in BGMI is known for its off-road capabilities and durability?",
-        "options": ["UAZ", "Dacia", "Van", "Buggy"],
-        "answer": "UAZ"
-    },
-    {
-        "question": "Which BGMI map features a unique weather effect known as 'Blizzard'?",
-        "options": ["Erangel", "Miramar", "Sanhok", "Vikendi"],
-        "answer": "Vikendi"
-    },
-    {
-        "question": "Which BGMI mode allows players to customize their own game rules and settings?",
-        "options": ["Classic", "Arcade", "Custom", "Training"],
-        "answer": "Custom"
-    },
-    {
-        "question": "In BGMI, what is the maximum number of players in a single 'War Mode' match?",
-        "options": ["50", "60", "70", "100"],
-        "answer": "100"
-    },
-    {
-        "question": "What is the special ability of the 'Pan' in BGMI?",
-        "options": ["Melee Weapon", "Shield", "Throwable", "Armor"],
-        "answer": "Shield"
-    },
-    {
-        "question": "Which weapon in BGMI uses a unique ammo type called '7.62mm'?",
-        "options": ["M416", "AKM", "Uzi", "Scar-L"],
-        "answer": "AKM"
-    },
-    {
-        "question": "Which BGMI character has the ability to deploy a shield during a match?",
-        "options": ["Sarah", "Roy", "Victor", "Lucas"],
-        "answer": "Victor"
-    },
-    {
-        "question": "In BGMI, which type of bulletproof vest offers the best protection?",
-        "options": ["Level 1", "Level 2", "Level 3", "Level 4"],
-        "answer": "Level 3"
-    },
-    {
-        "question": "Which of the following is a limited-time event mode in BGMI?",
-        "options": ["Classic", "Arcade", "Zombie", "War"],
-        "answer": "Zombie"
-    },
-    {
-        "question": "Which BGMI mode features a battle between players and zombies?",
-        "options": ["Classic", "Arcade", "Zombie Mode", "Survival"],
-        "answer": "Zombie Mode"
-    },
+    }
 ]
 
-
-export default data
+export default Games
