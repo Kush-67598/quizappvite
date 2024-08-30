@@ -8,7 +8,7 @@ const PlayQuiz = () => {
       <h2 className="bg-purple-700 text-center text-white font-bold text-2xl h-16 pt-4">Quizes</h2>
     <div className="bg-black pt-6 lg:grid grid-cols-3 ">
   
-      <div className="bg-cyan-500 mx-10 my-4 h-48 rounded-lg flex flex-col items-center justify-center">
+      <div className="bg-cyan-500 mx-10 my-12 h-48 rounded-lg flex flex-col items-center justify-center">
         <h2 className="font-bold text-center text-3xl my-2">Sports Trivia</h2>
         <p className="text-white max-w-sm mx-4 py-3">
             Facts and records related to different sports and athletes.
