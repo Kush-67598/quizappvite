@@ -6,8 +6,8 @@ const PlayQuiz = () => {
   return (
     <> 
       <h2 className="bg-green-500 text-center font-bold text-2xl h-20 pt-4">Quizes</h2>
-    <div className="bg-black pt-6 lg:grid grid-cols-3">
-      <div className="bg-yellow-400 mx-10 h-48 rounded-lg flex flex-col items-center justify-center">
+    <div className="bg-black pt-6 lg:grid grid-cols-3 ">
+      <div className="bg-yellow-400 mx-10 my-12 h-48 rounded-lg flex flex-col items-center justify-center">
         <h2 className="font-bold text-center text-3xl my-2">Sports Trivia</h2>
         <p className="text-white max-w-sm mx-4 my-2">
             Facts and records related to different sports and athletes.
