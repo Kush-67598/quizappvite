@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <div className="bg-yellow-400 h-[100vh] flex flex-col  items-center  ">
-        <h1 className=" bg-black text-xl font-bold font-mono text-white text-center my-4 rounded-md px-2">
-        QuizMaster: Explore & Compete
+        <h1 className=" bg-black text-lg font-bold font-mono text-white text-center my-2">
+          Ultimate Gamer Quiz: Prove Your Gaming Knowledge
         </h1>
 
         <div className="bg-white w-[100vw] rounded-lg h-[100vh] text-center py-4 ">
